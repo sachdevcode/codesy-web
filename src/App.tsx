@@ -8,21 +8,19 @@ import FifthSection from "./Components/FifthSection";
 import SixthSection from "./Components/SixthSection";
 import ThirdSection from "./Components/ThirdSection";
 import FourthSection from "./Components/fourthSection";
+import SecondSection from "./Components/SecondSection";
 const App = () => {
   // const [count, setCount] = useState(0);
 
   return (
-    <div className="h-[104vh]">
-      <div className="">
-        <Navbar />
-      </div>
-      <div className="">
-        <FirstSection />
-        <FifthSection />
-        <SixthSection />
-        <ThirdSection />
-        <FourthSection />
-      </div>
+    <div className="">
+      <Navbar />
+      <FirstSection />
+      <SecondSection />
+      <ThirdSection />
+      <FourthSection />
+      <FifthSection />
+      <SixthSection />
     </div>
   );
 };

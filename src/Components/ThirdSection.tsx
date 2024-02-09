@@ -1,5 +1,5 @@
-import React from "react";
 import Content from "../Content/Content";
+import ReuseButton from "../common/ReuseButton";
 
 const ThirdSection = () => {
   return (
@@ -38,13 +38,15 @@ const ThirdSection = () => {
               })}
             </div>
             <div className="w-5 h-5 border-b border-l border-black mb-10"></div>
-            <div className="dc-icon p-12 flex flex-col justify-between  w-[370px] h-[285px] max-[750px]:p-8  max-[750px]:h-[200px] max-[750px]:ml-0 max-[750px]:w-[100%] mb-8 ml-5 ">
+            <div className="dc-icon p-12 flex flex-col justify-between w-[370px] h-[285px] max-[750px]:p-8 max-[750px]:h-[200px] max-[750px]:ml-0 max-[750px]:w-[100%] mb-8 ml-5 ">
               <h1 className="text-light font-bold text-2xl max-[750px]:text-xl">
                 {Content.thirdSection.lastCard.title}
               </h1>
-              <button className="bg-accent w-max px-4 py-4">
-                {Content.thirdSection.lastCard.btn}
-              </button>
+              <ReuseButton
+                mainClass="bg-accent py-3 rounded-3xl w-[250px] px-4"
+                text={Content.thirdSection.lastCard.btn}
+                textClass="font-bold text-sm pr-4"
+              />
             </div>
           </div>
         </div>
