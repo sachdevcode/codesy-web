@@ -33,7 +33,7 @@
   /* aspect-ratio: 9/16; */
   aspect-ratio: 16/9;
 
-  background-position: center;
+
   background-repeat: no-repeat;
   object-fit: contain;
 }
@@ -41,7 +41,7 @@
   background-image: url("../src/assets/Banner1.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+
   aspect-ratio: 16 / 9;
   object-fit: fill;
   height: 100vh;
