@@ -9,6 +9,7 @@ const tailwindConfig = {
         primary: '#6215F9',
         secondary: '#FAD707',
         light: '#FFFFFF',
+        dark: "#000000",
         text: {
           DEFAULT: '#000000',
           light: '#FFFFFF',
