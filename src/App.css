@@ -31,10 +31,7 @@ html {
   height: 100vh;
   aspect-ratio: 16/9;
 
-<<<<<<< Updated upstream
-  background-position: center;
-=======
->>>>>>> Stashed changes
+
   background-repeat: no-repeat;
   object-fit: contain;
 }
@@ -42,7 +39,7 @@ html {
   background-image: url("../src/assets/Banner1.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+
   aspect-ratio: 16 / 9;
   object-fit: fill;
   height: 100vh;

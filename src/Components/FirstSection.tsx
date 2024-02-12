@@ -3,15 +3,11 @@ import ReuseButton from "../common/ReuseButton";
 
 const FirstSection = () => {
   return (
-<<<<<<< Updated upstream
-    <div className="pt-16 ">
+
+    <div className="pt-24 ">
       <div className="firstSection py-10 px-9 ">
         <div className="w-[82%] m-auto ">
-=======
-    <div className="pt-16">
-      <div className="firstSection py-10  px-9 max-[800px]:px-4 max-[800px]:py-4 ">
-        <div className="w-[82%] m-auto max-[800px]:w-[100%] max-[800px]:m-0  ">
->>>>>>> Stashed changes
+
           <h1 className="font-bold text-5xl pt-3 max-[800px]:w-auto   text-primary">
             {Content.firstSection.title}
           </h1>
