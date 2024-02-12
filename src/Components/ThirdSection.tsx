@@ -14,7 +14,7 @@ const ThirdSection = () => {
               </span>
             </h1>
             <img
-              src="../../public/DC-Icon.png"
+              src="DC-Icon.png"
               alt="dcicon"
               className="z-[10] absolute bottom-[-21rem] left-[-13%] min-w-[330px] max-w-[430px] h-[285px] mb-16"
             />
@@ -26,9 +26,12 @@ const ThirdSection = () => {
                 Content.thirdSection.card1,
                 Content.thirdSection.card2,
                 Content.thirdSection.card3,
-              ].map((data) => {
+              ].map((data, index) => {
                 return (
-                  <div className="block w-[100%] max-[800px]:w-[100%]">
+                  <div
+                    key={index}
+                    className="block w-[100%] max-[800px]:w-[100%]"
+                  >
                     <h5 className="mb-2 tracking-tight text-2xl font-normal ">
                       {data.title}
                     </h5>
@@ -43,7 +46,7 @@ const ThirdSection = () => {
                 {Content.thirdSection.lastCard.title}
               </h1>
               <ReuseButton
-                mainClass="bg-accent py-3 rounded-3xl w-[250px] px-4"
+                mainClass="bg-accent py-3 uppercase rounded-3xl w-[250px] px-4"
                 text={Content.thirdSection.lastCard.btn}
                 textClass="font-bold text-sm pr-4"
               />

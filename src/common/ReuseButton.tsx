@@ -12,8 +12,7 @@ const ReuseButton = ({
   iconClass?: string;
   mainClass?: string;
 }) => {
-  const allClass =
-    "flex items-center cursor-pointer justify-center uppercase w-[100%]";
+  const allClass = "flex items-center cursor-pointer justify-center  w-[100%]";
   const additionClass = `${allClass} ${mainClass}`;
   return (
     <a className={additionClass}>
