@@ -1,14 +1,11 @@
-button in commont folder
-tiles in common folder
-hero text in common folder
 
-color 
-main
-primary 
-secondary
-dark
-light
-danger
-success
-warning
+reusable component in : common 
 
+for lint run : yarn lint
+for prettier : yarn format
+
+
+befor commit run (pre-commit) : yarn lint && yarn format
+commit pattern : review/add-new-feature
+
+for start locally : yarn dev
