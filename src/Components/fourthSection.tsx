@@ -4,10 +4,10 @@ import ReuseButton from "../common/ReuseButton";
 
 const fourthSection = () => {
   return (
-    <div className="flex flex-col bg-dark text-light h-auto z-[5] mb-44 pt-40 ">
-      <div className="w-[80%] m-auto">
+    <div className="flex flex-col bg-dark text-light h-auto z-[5]  pt-40 ">
+      <div className="w-[78%] m-auto max-[800px]:w-[90%]">
         <div className="text-5xl font-medium py-16">
-          <h1 className="text-light   md:w-[690px] max-[800px]:w-auto ">
+          <h1 className="text-light font-bold  md:w-[690px] max-[800px]:w-auto max-[800px]:text-[32px]  ">
             We are building
             <span className="text-primary"> solutions </span>
             that solves your business challenges
@@ -16,7 +16,7 @@ const fourthSection = () => {
         <>
           <div className="w-5 h-5 border-t border-l border-light max-[750px]:hidden"></div>
 
-          <div className="flex flex-row pl-8 max-w-[1140px] justify-between gap-60 max-[750px]:flex-col max-[750px]:gap-5">
+          <div className="flex flex-row pl-8 max-w-[1140px] justify-between gap-60 max-[750px]:pl-0 max-[750px]:flex-col max-[750px]:gap-5">
             <>
               <div className="w-5 h-5 border-t border-l border-light hidden max-[750px]:block"></div>
 
@@ -40,14 +40,14 @@ const fourthSection = () => {
               </div>
               <div className="w-5 h-5 border-b border-l border-light mb-10 hidden max-[750px]:block"></div>
             </>
-            <div className="flex flex-col gap-10">
-              <h1 className="font-normal text-2xl break-words w-[60%] max-[800px]:w-[95%]">
+            <div className="flex flex-col gap-10 ">
+              <h1 className="font-normal text-2xl break-words w-[60%] max-[800px]:w-[100%]">
                 {/* min-w-[350px]  */}
                 {Content.fourthSection.desc}
               </h1>
               <ReuseButton
                 text={Content.fourthSection.btn}
-                mainClass="  rounded-[50px]  w-[220px] bg-primary py-4
+                mainClass="  rounded-[50px] uppercase w-[220px] bg-primary py-4
                transition ease-linear delay-150  hover:bg-light hover:text-dark mb-10"
                 textClass="pr-7 font-bold"
               />

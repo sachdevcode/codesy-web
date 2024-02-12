@@ -1,6 +1,3 @@
-import { useState } from "react";
-// import reactLogo from "./assets/react.svg";
-// import viteLogo from "/vite.svg";
 import "./App.css";
 import Navbar from "./Components/Navbar";
 import FirstSection from "./Components/FirstSection";
@@ -9,9 +6,10 @@ import SixthSection from "./Components/SixthSection";
 import ThirdSection from "./Components/ThirdSection";
 import FourthSection from "./Components/fourthSection";
 import SecondSection from "./Components/SecondSection";
+import EightSection from "./Components/EightSection";
+import NinthSection from "./Components/NinthSection";
+import SeventhSection from "./Components/SeventhSection";
 const App = () => {
-  // const [count, setCount] = useState(0);
-
   return (
     <div className="">
       <Navbar />
@@ -21,6 +19,9 @@ const App = () => {
       <FourthSection />
       <FifthSection />
       <SixthSection />
+      <SeventhSection />
+      <EightSection />
+      <NinthSection />
     </div>
   );
 };

@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
           <img
             src="https://flowbite.com/docs/images/logo.svg"
             className="h-8"
-            alt="Flowbite Logo"
+            alt="Codesy"
           />
           <span className="self-center text-2xl font-semibold whitespace-nowrap ">
             Codesy
@@ -79,7 +79,7 @@ const Navbar: React.FC = () => {
                 return (
                   <li key={index}>
                     <a
-                      href="#"
+                      href={data.link}
                       className="block py-2 text-sm rounded md:bg-transparent text-dark transition ease-linear delay-150  hover:text-accent"
                       aria-current="page"
                     >
@@ -112,7 +112,7 @@ const Navbar: React.FC = () => {
                     return (
                       <li key={index}>
                         <a
-                          href="#"
+                          href={data.link}
                           className="block py-2 text-base font-medium rounded md:bg-transparent text-accent transition ease-linear delay-150  hover:text-primary "
                           aria-current="page"
                         >
