@@ -1,23 +1,20 @@
 const tailwindConfig = {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
-        primary: '#6215F9',
-        secondary: '#FAD707',
-        light: '#FFFFFF',
+        primary: "#6215F9",
+        secondary: "#FAD707",
+        light: "#FFFFFF",
         dark: "#000000",
         text: {
-          DEFAULT: '#000000',
-          light: '#FFFFFF',
+          DEFAULT: "#000000",
+          light: "#FFFFFF",
         },
-        accent: '#FAD707',
+        accent: "#FAD707",
       },
       fontFamily: {
-        main: ['Roboto', 'sans-serif'],
+        main: ["Roboto", "sans-serif"],
       },
       fontWeight: {
         primary: 600,
