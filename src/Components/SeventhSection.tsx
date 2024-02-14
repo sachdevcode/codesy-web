@@ -3,7 +3,7 @@ import SeventhSubSection from "./SeventhSubSection";
 
 const SeventhSection = () => {
   return (
-    <div className=" seven-sub h-[550px] ">
+    <div className=" seven-sub h-[550px] py-10" id="work">
       <div className="flex flex-col gap-10 w-[80%] m-auto px-4 py-20 max-[800px]:w-full">
         <h1 className="text-5xl font-bold text-light">
           {Content.SeventhSection.Title}

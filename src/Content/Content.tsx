@@ -35,13 +35,13 @@ const Content = {
       label: "Contact Us",
       link: "#contact",
     },
-    {
-      label: "Start a Project",
-      link: "#start-project",
-    },
+    // {
+    //   label: "Start a Project",
+    //   link: "#start-project",
+    // },
   ],
   firstSection: {
-    title: "Hello, We are EpicJam",
+    title: "Hello, We are Codesy",
     description:
       "A full-service phygital powerhouse guiding businesses towards the right solutions.",
     first_btn: "lets Build Something",
@@ -57,11 +57,11 @@ const Content = {
     title2: "then we are the Explorers.",
     card1: {
       title: "Daring to Re-Think",
-      desc: "We’re EpicJam, and we believe that originality is worth celebrating in practice. We love working with those who share our passion for uniqueness, and we want to help you express your own unique perspective.",
+      desc: "We’re Codesy, and we believe that originality is worth celebrating in practice. We love working with those who share our passion for uniqueness, and we want to help you express your own unique perspective.",
     },
     card2: {
       title: "Building Success",
-      desc: "When working with EpicJam, you will feel like you’re working with an extension of your own team. We care about your business just as much as you do.",
+      desc: "When working with Codesy, you will feel like you’re working with an extension of your own team. We care about your business just as much as you do.",
     },
     card3: {
       title: "Thirst for Perfection",
@@ -135,7 +135,7 @@ const Content = {
   },
   twelvethSection: {
     title: "Have a project to discuss?",
-    highlight: "Contact us!",
+    highlight: "Contact us !",
     desc: "Once you let us know your requirement, our technical expert will schedule a call and discuss your idea in detail post sign of an NDA.",
   },
 };

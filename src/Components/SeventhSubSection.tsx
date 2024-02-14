@@ -13,6 +13,18 @@ const SeventhSubSection = () => {
     <div className=" flex flex-wrap  my-10  ">
       <Swiper
         spaceBetween={20}
+        breakpoints={{
+          1150: {
+            slidesPerView: 3,
+          },
+          760: {
+            slidesPerView: 2,
+          },
+          550: {
+            slidesPerView: 1,
+            centeredSlides: false,
+          },
+        }}
         slidesPerView={3}
         centeredSlides={true}
         grabCursor={true}
@@ -32,7 +44,7 @@ const SeventhSubSection = () => {
         {cardsList.map((cards, index) => {
           return (
             <SwiperSlide
-              className="w-[490px] min-w-[390px] rounded-[18px] bg-[#F2F2F2]  hover:bg-accent   visit-section "
+              className="w-[490px]  min-w-[390px] rounded-[18px] bg-[#F2F2F2]  hover:bg-accent   visit-section "
               key={index}
             >
               <div className="p-4 rounded-[18px] ">

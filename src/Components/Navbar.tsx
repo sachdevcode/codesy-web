@@ -4,6 +4,7 @@ import "../App.css";
 const Navbar: React.FC = () => {
   // console.log(Content.header);
   const [menubar, setMenuBar] = useState(false);
+  const [currentTab, setCurrentTab] = useState("");
 
   useEffect(() => {
     function handleResize() {
@@ -14,27 +15,34 @@ const Navbar: React.FC = () => {
 
     window.addEventListener("resize", handleResize);
 
-    // Cleanup function to remove the event listener when the component unmounts
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []); // Empty dependency array to ensure the effect runs only once on mount
+  }, []);
+  const handleTabs = (data: string | number) => {
+    setCurrentTab(data);
+    setMenuBar(false);
+  };
+  const listclass =
+    "block py-2 text-sm rounded md:bg-transparent text-dark transition ease-linear delay-150  hover:text-accent";
+  const activeClass =
+    "block py-2 text-sm rounded md:bg-transparent text-accent transition ease-linear delay-150  hover:text-accent";
+  const responsiveListclass =
+    "block py-2 text-sm rounded md:bg-transparent text-accent transition ease-linear delay-150  hover:text-primary";
+  const responsiveActiveClass =
+    "block py-2 text-sm rounded md:bg-transparent text-primary transition ease-linear delay-150  hover:text-primary";
 
   return (
     <nav className="bg-light      fixed w-full z-20 top-0 start-0 border-b border-gray-900  ">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a
-          href="https://codesyconsulting.com/"
-          className="flex items-center space-x-3 rtl:space-x-reverse"
+          href="#"
+          className="flex items-center space-x-3 rtl:space-x-reverse w-[168px] "
         >
-          <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            className="h-8"
-            alt="Codesy"
-          />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap ">
+          <img src="logo.png" className="h-auto object-cover" alt="Codesy" />
+          {/* <span className="self-center text-2xl font-semibold whitespace-nowrap ">
             Codesy
-          </span>
+          </span> */}
         </a>
         <div className="flex gap-10">
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
@@ -79,8 +87,11 @@ const Navbar: React.FC = () => {
                 return (
                   <li key={index}>
                     <a
+                      onClick={() => handleTabs(data.label)}
+                      className={
+                        currentTab === data.label ? activeClass : listclass
+                      }
                       href={data.link}
-                      className="block py-2 text-sm rounded md:bg-transparent text-dark transition ease-linear delay-150  hover:text-accent"
                       aria-current="page"
                     >
                       {data.label}
@@ -113,7 +124,13 @@ const Navbar: React.FC = () => {
                       <li key={index}>
                         <a
                           href={data.link}
-                          className="block py-2 text-base font-medium rounded md:bg-transparent text-accent transition ease-linear delay-150  hover:text-primary "
+                          onClick={() => handleTabs(data.label)}
+                          className={
+                            currentTab === data.label
+                              ? responsiveActiveClass
+                              : responsiveListclass
+                          }
+                          // className="block py-2 text-base font-medium rounded md:bg-transparent text-accent transition ease-linear delay-150  hover:text-primary "
                           aria-current="page"
                         >
                           {data.label}

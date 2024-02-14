@@ -1,4 +1,3 @@
-
 import "./App.css";
 import Navbar from "./Components/Navbar";
 import FirstSection from "./Components/FirstSection";
@@ -10,6 +9,8 @@ import SecondSection from "./Components/SecondSection";
 import EightSection from "./Components/EightSection";
 import NinthSection from "./Components/NinthSection";
 import SeventhSection from "./Components/SeventhSection";
+import Footer from "./Components/Footer";
+import ContactUs from "./Components/ContactUs";
 const App = () => {
   return (
     <div className="">
@@ -23,6 +24,8 @@ const App = () => {
       <SeventhSection />
       <EightSection />
       <NinthSection />
+      <ContactUs />
+      <Footer />
     </div>
   );
 };
