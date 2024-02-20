@@ -69,7 +69,7 @@ const EightSection = () => {
         >
           {carosouelclients.map((path, index) => (
             // justify-center
-            <SwiperSlide key={path} className="flex justify-center">
+            <SwiperSlide key={index} className="flex justify-center">
               <img
                 key={index}
                 src={path}

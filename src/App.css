@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  /* font-family:; */
+  font-family: "Roboto", sans-serif;
 }
 html {
   scroll-behavior: smooth;
@@ -80,4 +81,11 @@ body::-webkit-scrollbar-thumb {
   background-image: url("../src/assets/Banner2.png");
   background-position: center;
   background-size: contain;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  color: yellow !important;
+}
+footer {
+  font-family: "Morganite", Sans-serif;
 }

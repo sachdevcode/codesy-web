@@ -4,7 +4,7 @@ import ReuseButton from "../common/ReuseButton";
 const ThirdSection = () => {
   return (
     <>
-      <div className="w-[80%]  max-[800px]:w-[100%]  px-3 max-[800px]:px-0 my-10    m-auto relative ">
+      <div className="w-[80%]  max-[800px]:w-[100%]  px-3 max-[800px]:px-0 my-10  break-words   m-auto relative ">
         <div className="flex  gap-48  max-[800px]:gap-10  m-auto  max-[750px]:flex-col ">
           <div className="">
             <h1 className="font-bold text-5xl pt-3 md:w-[325px] max-[800px]:w-auto max-[772px]:text-3xl max-[772px]:px-3  m-auto">
